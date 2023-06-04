@@ -1,0 +1,45 @@
+* {
+    border: dotted 1px red;
+    font-family: Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.header {
+    
+}
+
+.hero {
+    background-color: #1F2937;
+    flex-grow: 1;
+}
+
+.information {
+    flex-grow: 1;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup {
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
+    height: 70px;
+}
