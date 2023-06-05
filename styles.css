@@ -1,28 +1,169 @@
+/*GLOBAL STUFF*/
+
 * {
     border: dotted 1px red;
-    font-family: Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-grow: 1;
+    margin: 0;
+    justify-content: center;
 }
 
-.header {
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    max-width: 1000px;
+}
+
+.headerbox, .herobox, .infobox, .quotebox, .footerbox {
+    padding-left: 100px;
+    padding-right: 100px;
     
 }
 
+button {
+    background-color: #3882f6;
+    color: #E5E7EB;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+/*HEADER STUFF*/
+
+.header {
+    display: flex;
+    background-color: #1F2937;
+    flex-grow: 0;
+    
+}
+
+.headerbox {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 10px;
+    flex-grow: 1;
+    color: #F9FAF8;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+    font-size: 18px;
+    color: #E5E7EB;
+
+}
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+/*HERO STUFF*/
+
 .hero {
     background-color: #1F2937;
+    color:#F9FAF8;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    
+}
+
+.herobox {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+    
+}
+
+.herotext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+
+.placeholderbox {
+    width: 500px;
+    height: 200px;
+}
+
+.herotext-main {
+    
+    font-size: 48px;
+    font-weight: 900;
+}
+
+
+
+
+.placeholderbox {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+/*INFO STUFF*/
+
+.info {
+    flex-grow: 1;
+    display: flex;
+}
+
+.infobox {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.info-main {
+    align-self: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
     flex-grow: 1;
 }
 
-.information {
+.imgbox {
+    display: flex;
     flex-grow: 1;
+    text-align: center;
+
 }
+
+.img {
+    width: 100px;
+    height: 100px;
+    border: solid 3px #3882f6;
+    border-radius: 4px;
+}
+
+
+/*QUOTE STUFF*/
 
 .quote {
     display: flex;
@@ -34,6 +175,10 @@ body {
 .signup {
     
 }
+
+
+/*FOOTER STUFF*/
+
 
 .footer {
     display: flex;
